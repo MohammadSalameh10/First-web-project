@@ -1,0 +1,973 @@
+Body {
+  Background-color: black;
+  Color: white;
+  Transition: all 0.4s ease-in-out;
+  Margin: 0;
+  Padding: 0;
+  Font-family: "Poppins", sans-serif;
+}
+
+.container {
+  Min-height: 100vh;
+  Padding: 7rem 11rem;
+}
+
+.header-content {
+  Display: grid;
+  Grid-template-columns: repeat(2, 1fr);
+  Min-height: 100vh;
+}
+
+.image img {
+  Width: 90%;
+  Height: 90%;
+  Object-fit: cover;
+  Transition: all 0.4s ease-in-out;
+  Filter: grayscale(100%);
+  border-radius: 50%;
+}
+
+.image img:hover {
+  Filter: grayscale(0);
+}
+
+.right-header {
+  Display: flex;
+  Flex-direction: column;
+  Justify-content: center;
+  Padding: 0 5rem;
+  padding-bottom: 15rem;
+}
+
+.name {
+  Font-size: 2rem;
+}
+
+.name span {
+  Color: mediumturquoise;
+}
+
+.right-header p {
+  Margin: 1.5rem 0;
+  Line-height: 2rem;
+}
+
+.main-btn {
+  Border-radius: 30px;
+  Font-weight: 600;
+  Position: relative;
+  Border: 1px solid mediumturquoise;
+  Display: flex;
+  width: fit-content;
+  Align-items: center;
+  Overflow: hidden;
+  Justify-content: stretch;
+}
+
+.main-btn .btn-text {
+  Padding: 0 2rem;
+}
+
+.main-btn .btn-icon {
+  Background-color: mediumturquoise;
+  Display: flex;
+  Align-items: center;
+  Justify-content: center;
+  Border-radius: 50%;
+  Padding: 1rem;
+}
+
+.main-btn .cover {
+  Position: absolute;
+  Top: 0;
+  Right: 0;
+  Transform: translateX(100%);
+  Transition: all 0.4s ease-out;
+  z-index: -1;
+}
+
+.main-btn:hover {
+  Transition: all 0.4s ease-out;
+}
+
+.main-btn:hover .cover {
+  Width: 100%;
+  Height: 100%;
+  Background-color: mediumturquoise;
+  Transform: translateX(0);
+  Transition: all 0.4s ease-out;
+}
+
+.controls {
+  Position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+.controls .control {
+  Padding: 1rem;
+  Cursor: pointer;
+  Background-color: #454e56;
+  Width: 30px;
+  Height: 30px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+  Margin: 0.7rem 0;
+}
+
+.controls .control i {
+  Font-size: 1.2rem;
+  Color: #b2becd;
+}
+
+.controls .active-btn {
+  Background-color: mediumturquoise;
+  Transition: all 0.4s ease-in-out;
+
+}
+
+.controls .active-btn i {
+  Color: white;
+}
+
+.theme-btn {
+  Top: 5%;
+  Right: 3%;
+  Width: 70px;
+  Height: 70px;
+  Border-radius: 50%;
+  Background-color: #454e56;
+  Cursor: pointer;
+  Position: fixed;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.theme-btn i {
+  Font-size: 1.4rem;
+  Color: #b2becd;
+
+}
+
+.aboutme {
+  Min-height: 100vh;
+  Padding: 7rem 11rem;
+}
+
+.title {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.titlecover {
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.titlecover h1 {
+  text-transform: uppercase;
+  color: #1c1f22;
+  transform: translateX(-57%);
+  font-size: 60px;
+}
+
+.title h1 span {
+  Color: mediumturquoise;
+}
+
+.about-content {
+  Display: grid;
+  Grid-template-columns: repeat(2, 1fr);
+  Min-height: 100vh;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  text-transform: uppercase;
+}
+
+.about-right {
+  Display: grid;
+  Grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+}
+
+.about-rl {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-rl div {
+  Object-fit: cover;
+  Transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease;
+}
+
+.about-rl div:hover {
+  transform: scale(1.1);
+}
+
+.about-rl h1 {
+  color: mediumturquoise;
+}
+
+.rl1 {
+  display: flex;
+}
+
+.rl {
+  margin: 11px;
+  height: 2px;
+  width: 6px;
+  background-color: #454e56;
+
+}
+
+.about-rr {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-rr div {
+  Object-fit: cover;
+  Transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease;
+}
+
+.about-rr div:hover {
+  transform: scale(1.1);
+}
+
+.about-rr h1 {
+  color: mediumturquoise;
+}
+
+.brl {
+  padding-top: 8rem;
+}
+
+.about-title1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.about-skills {
+  margin-top: 3rem;
+  Display: grid;
+  Grid-template-columns: repeat(2, 1fr);
+  height: 15rem;
+  gap: 5rem;
+}
+
+.sl {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+
+.about-h {
+  display: flex;
+  align-items: center;
+}
+
+.ht {
+  position: relative;
+  border-radius: 5px;
+  margin: 10px;
+  height: 8px;
+  width: 19rem;
+  background-color: #454e56;
+}
+
+.htcover {
+  position: absolute;
+  margin: 10px;
+  transform: translateX(13%);
+  height: 8px;
+  width: 15rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+
+.js {
+  position: relative;
+  margin: 10px;
+  height: 8px;
+  width: 19rem;
+  background-color: #454e56;
+  border-radius: 5px;
+}
+
+.jscover {
+  position: absolute;
+  margin: 10px;
+  transform: translateX(14%);
+  height: 8px;
+  width: 14rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+
+.no {
+  position: relative;
+  margin: 10px;
+  height: 8px;
+  width: 19rem;
+  background-color: #454e56;
+  border-radius: 5px;
+}
+
+.nocover {
+  position: absolute;
+  margin: 10px;
+  transform: translateX(12%);
+  height: 8px;
+  width: 16rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+
+.css {
+  position: relative;
+  margin: 10px;
+  height: 8px;
+  width: 19rem;
+  background-color: #454e56;
+  border-radius: 5px;
+}
+
+.csscover {
+  position: absolute;
+  margin: 10px;
+  transform: translateX(11%);
+  height: 8px;
+  width: 18rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+
+.rj {
+  position: relative;
+  margin: 10px;
+  height: 8px;
+  width: 19rem;
+  background-color: #454e56;
+  border-radius: 5px;
+}
+
+.rjcover {
+  position: absolute;
+  margin: 10px;
+  transform: translateX(15%);
+  height: 8px;
+  width: 13rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+
+.py {
+  position: relative;
+  margin: 10px;
+  height: 8px;
+  width: 19rem;
+  background-color: #454e56;
+  border-radius: 5px;
+}
+
+.pycover {
+  position: absolute;
+  margin: 10px;
+  transform: translateX(18%);
+  height: 8px;
+  width: 11rem;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+}
+
+.sr {
+  margin-left: 10rem;
+  height: 10rem;
+}
+
+.My-Timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.skilo {
+  display: grid;
+  Grid-template-columns: repeat(2, 1fr);
+  height: 35rem;
+  padding-top: 3rem;
+}
+
+.skilo1 {
+  position: relative;
+  height: 35rem;
+}
+
+.skilo2 {
+  position: relative;
+  height: 35rem;
+}
+
+.skilo1-1 i {
+  position: absolute;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 20px;
+  Height: 20px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.skilo1-1 {
+  padding: 1rem;
+}
+
+.skilo1-1 .s1 {
+  margin-left: 4rem;
+  font-size: small;
+  position: absolute;
+  width: 7rem;
+  background-color: #454e56;
+  border-radius: 30px;
+  display: flex;
+}
+
+.skilo1-1 .s2 {
+  margin-left: 4rem;
+}
+
+.skilo1-1 .s3 {
+  color: #797c7e;
+
+}
+
+.skilo1-1 p {
+  margin-left: 4rem;
+  color: #797c7e;
+}
+
+.skilo1-1 .s1 span {
+  margin-left: 0.5rem;
+  justify-content: center;
+}
+
+.skilo1-2 i {
+  position: absolute;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 20px;
+  Height: 20px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.skilo1-2 {
+  padding: 1rem;
+}
+
+.skilo1-2 .s1 {
+  margin-left: 4rem;
+  font-size: small;
+  position: absolute;
+  width: 7rem;
+  background-color: #454e56;
+  border-radius: 30px;
+  display: flex;
+}
+
+.skilo1-2 .s2 {
+  margin-left: 4rem;
+}
+
+.skilo1-2 .s3 {
+  color: #797c7e;
+}
+
+.skilo1-2 p {
+  margin-left: 4rem;
+  color: #797c7e;
+}
+
+.skilo1-2 .s1 span {
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.skilo1-3 i {
+  position: absolute;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 20px;
+  Height: 20px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.skilo1-3 {
+  padding: 1rem;
+}
+
+.skilo1-3 .s1 {
+  margin-left: 4rem;
+  font-size: small;
+  position: absolute;
+  width: 7rem;
+  background-color: #454e56;
+  border-radius: 30px;
+  display: flex;
+}
+
+.skilo1-3 .s2 {
+  margin-left: 4rem;
+}
+
+.skilo1-3 .s3 {
+  color: #797c7e;
+}
+
+.skilo1-3 p {
+  margin-left: 4rem;
+  color: #797c7e;
+}
+
+.skilo1-3 .s1 span {
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.skilo1-4 i {
+  position: absolute;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 20px;
+  Height: 20px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.skilo1-4 {
+  padding: 1rem;
+}
+
+.skilo1-4 .s1 {
+  margin-left: 4rem;
+  font-size: small;
+  position: absolute;
+  width: 7rem;
+  background-color: #454e56;
+  border-radius: 30px;
+  display: flex;
+}
+
+.skilo1-4 .s2 {
+  margin-left: 4rem;
+}
+
+.skilo1-4 .s3 {
+  color: #797c7e;
+}
+
+.skilo1-4 p {
+  margin-left: 4rem;
+  color: #797c7e;
+}
+
+.skilo1-4 .s1 span {
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.skilo1-5 i {
+  position: absolute;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 20px;
+  Height: 20px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.skilo1-5 {
+  padding: 1rem;
+}
+
+.skilo1-5 .s1 {
+  margin-left: 4rem;
+  font-size: small;
+  position: absolute;
+  width: 7rem;
+  background-color: #454e56;
+  border-radius: 30px;
+  display: flex;
+}
+
+.skilo1-5 .s2 {
+  margin-left: 4rem;
+}
+
+.skilo1-5 .s3 {
+  color: #797c7e;
+}
+
+.skilo1-5 p {
+  margin-left: 4rem;
+  color: #797c7e;
+}
+
+.skilo1-5 .s1 span {
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.skilo1-6 i {
+  position: absolute;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 20px;
+  Height: 20px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.skilo1-6 {
+  padding: 1rem;
+}
+
+.skilo1-6 .s1 {
+  margin-left: 4rem;
+  font-size: small;
+  position: absolute;
+  width: 7rem;
+  background-color: #454e56;
+  border-radius: 30px;
+  display: flex;
+}
+
+.skilo1-6 .s2 {
+  margin-left: 4rem;
+}
+
+.skilo1-6 .s3 {
+  color: #797c7e;
+}
+
+.skilo1-6 p {
+  margin-left: 4rem;
+  color: #797c7e;
+}
+
+.skilo1-6 .s1 span {
+  margin-left: 0.5rem;
+  justify-content: center;
+}
+
+.pttitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.pttitle span {
+  color: mediumturquoise;
+}
+
+.myprotfolio {
+  height: 100rem;
+}
+
+.myprotfoliocover {
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myprotfoliocover h1 {
+  text-transform: uppercase;
+  color: #1c1f22;
+  transform: translateX(2%);
+  font-size: 67px;
+}
+
+.myprotfolio p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  height: 20rem;
+  display: grid;
+  Grid-template-columns: repeat(3, 1fr);
+  margin-left: 7rem;
+  margin-top: 5rem;
+}
+
+.photos1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.image1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.covrs {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 70%;
+  height: 90%;
+  background-color: mediumturquoise;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 6px;
+  transition: transform 0.6s ease;
+  border-radius: 5%;
+  display: flex;
+}
+
+.covrss {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: 16px;
+}
+
+.covrss i {
+  margin: 0 1rem;
+}
+
+.image1 img {
+  Width: 70%;
+  Height: 90%;
+  border-radius: 5%;
+  display: block;
+}
+
+.image1:hover .covrs {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.myblogs {
+  height: 100rem;
+}
+
+.myblogst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.myblogst span {
+  color: mediumturquoise;
+}
+
+.myblogscover {
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myblogscover h1 {
+  text-transform: uppercase;
+  color: #1c1f22;
+  transform: translateX(2%);
+  font-size: 67px;
+}
+
+.myblogspage {
+  display: grid;
+  Grid-template-columns: repeat(3, 1fr);
+  height: 50rem;
+  margin-left: 7rem;
+  margin-top: 4rem;
+}
+
+.imageo img {
+  Width: 20rem;
+  Height: 20rem;
+  Object-fit: cover;
+  Transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease;
+  filter: grayscale(100);
+  position: relative;
+}
+
+.imageo img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+.myblogs1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.myblogso {
+  font-size: 20px;
+}
+
+.imgbord {
+  border-bottom: 5px solid mediumturquoise;
+  width: 20rem;
+  height: 20rem;
+}
+
+.imageo {
+  padding-bottom: 5rem;
+}
+
+.contactmet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.contactmet span {
+  color: mediumturquoise;
+}
+
+.contactmecover {
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactmecover h1 {
+  text-transform: uppercase;
+  color: #1c1f22;
+  transform: translateX(2%);
+  font-size: 67px;
+}
+
+.contactmeinfo {
+  padding-left: 7rem;
+}
+
+.iconinfo {
+  padding-left: 1rem;
+}
+
+.contactmeinfo span {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contactme {
+  height: 100rem;
+}
+
+.contactmeinfo i {
+  color: mediumturquoise;
+  padding-bottom: 1rem;
+}
+
+.contactmeinfo span {
+  color: white;
+}
+
+.contactmes {
+  display: flex;
+  flex-direction: row;
+  padding-left: 9rem;
+  padding-top: 0.5rem;
+}
+
+.contactmes i {
+  margin-right: 1rem;
+  Padding: 1rem;
+  Background-color: mediumturquoise;
+  Width: 5px;
+  Height: 5px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.contactmete {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-left: 7rem;
+}
+
+.contactmete input {
+  width: 70rem;
+  height: 15rem;
+  border-radius: 20px;
+}
+
+.contactmete button {
+  margin-top: 1rem;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+}
